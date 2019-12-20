@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timer Based Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+            </div>
+            <div class="col-sm-4 ">
+                <h5 class="float-right">Time Taken :<span id=timerSection></span></h5>
+            </div>
+            <div class="col-sm-2">
+            </div>
+            <!-- <div class="col-sm-6">
+                        <h4>Total Score is : <span id=totalScore></span></h4>
+                    </div> -->
+        </div>
+        <div class="row startMsg">
+            <div class="col-sm-12 startMsg">
+                <h1 class="startMsg">JavaScript Quiz</h1>
+                <h5 class="startMsg">This quiz is for testing javascript knowledge</h5>
+            </div>
+        </div>
+        <div class="questions">
+            <div class="row question1" id="q1">
+                <div class="col-sm-12 question1">
+                    <h3 class="question1">Question 1</h3>
+                    <h5 class="question1 qstn">Commonly used data types DO NOT include: </h5>
+                </div>
+                <div class="row question1" id="a1">
+                    <div class="col-sm-12 question1 answers">
+                        <ul class="question1">
+                            <li class="question1"><button class="ans buttonOpt question1 btn btn-outline-primary">strings</button></li>
+                            <li class="question1"><button class="ans buttonOpt question1 btn btn-outline-primary">booleans</button></li>
+                            <li class="question1"><button class="ans correct buttonOpt question1 btn btn-outline-primary" id="ans1">alerts</button></li>
+                            <li class="question1"><button class="ans buttonOpt question1 btn btn-outline-primary">numbers</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row question2" id="q2">
+                <div class="col-sm-12 question2">
+                    <h3 class="question2">Question 2</h3>
+                    <h5 class="question2 qstn">The condition in an if / else statement is enclosed within ____.</h5></div>
+                <div class="row question2" id="a2">
+                    <div class="col-sm-12 question2 answers">
+                        <ul class="question2">
+                            <li class="question2"><button class="ans buttonOpt question2 btn btn-outline-primary">quotes</button></li>
+                            <li class="question2"><button class="ans buttonOpt question2 btn btn-outline-primary">curly brackets</button></li>
+                            <li class="question2"><button class="ans correct buttonOpt question2 btn btn-outline-primary" id="ans2">parentheses</button></li>
+                            <li class="question2"><button class="ans buttonOpt question2 btn btn-outline-primary">square brackets</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row question3" id="q3">
+                <div class="col-sm-12 question3">
+                    <h3 class="question3">Question 3</h3>
+                    <h5 class="question3 qstn">Number("1") - 1 == 0;</h5>
+                </div>
+                <div class="row question3" id="a3">
+                    <div class="col-sm-12 question3 answers">
+                        <ul class="question3">
+                            <li class="question3"><button class="ans correct buttonOpt question3 btn btn-outline-primary"
+                                    id="ans3">true</button>
+                            </li>
+                            <li class="question3"><button
+                                    class="ans buttonOpt question3 btn btn-outline-primary">false</button></li>
+                            <li class="question3"><button class="ans buttonOpt question3 btn btn-outline-primary">Type
+                                    Error</button>
+                            </li>
+                            <li class="question3"><button
+                                    class="ans buttonOpt question3 btn btn-outline-primary">NaN</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row question4" id="q4">
+                <div class="col-sm-12 question4">
+                    <h3 class="question4">Question 4</h3>
+                    <h5 class="question4 qstn">(true + false) > 2 + true;</h5>
+                </div>
+                <div class="row question4" id="a4">
+                    <div class="col-sm-12 question4 answers">
+                        <ul class="question4">
+                            <li class="question4"><button
+                                    class="buttonOpt question4 btn btn-outline-primary">true</button>
+                            </li>
+                            <li class="question4"><button class="ans correct buttonOpt question4 btn btn-outline-primary"
+                                    id="ans4">false</button>
+                            </li>
+                            <li class="question4"><button class="ans buttonOpt question4 btn btn-outline-primary">Type
+                                    Error</button>
+                            </li>
+                            <li class="question4"><button
+                                    class="ans buttonOpt question4 btn btn-outline-primary">NaN</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row question5" id="q5">
+                <div class="col-sm-12 question5">
+                    <h3 class="question5">Question 5</h3>
+                    <h5 class="question5 qstn">new String("This is a string") instanceof String;</h5>
+                </div>
+                <div class="row question5" id="a5">
+                    <div class="col-sm-12 question5 answers">
+                        <ul class="question5">
+                            <li class="question5"><button class="ans correct buttonOpt question5 btn btn-outline-primary"
+                                    id="ans5">true</button>
+                            </li>
+                            <li class="question5"><button
+                                    class="ans buttonOpt question5 btn btn-outline-primary">false</button></li>
+                            <li class="question5"><button class="ans buttonOpt question5 btn btn-outline-primary">Type
+                                    Error</button>
+                            </li>
+                            <li class="question5"><button
+                                    class="ans buttonOpt question5 btn btn-outline-primary">NaN</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row question6" id="q6">
+                <div class="col-sm-12 question6">
+                    <h3 class="question6">Question 6</h3>
+                    <h5 class="question6 qstn">[] + [] + 'foo'.split('');</h5>
+                </div>
+                <div class="row question6" id="a6">
+                    <div class="col-sm-12 question6 answers">
+                        <ul class="question6">
+                            <li class="question6"><button class="ans correct buttonOpt question6 btn btn-outline-primary"
+                                    id="ans6">"f,
+                                    o,
+                                    o"</button>
+                            </li>
+                            <li class="question6"><button class="ans buttonOpt question6 btn btn-outline-primary">["f",
+                                    "o",
+                                    "o"]</button>
+                            </li>
+                            <li class="question6"><button class="ans buttonOpt question6 btn btn-outline-primary">Type
+                                    Error</button>
+                            </li>
+                            <li class="question6"><button class="ans buttonOpt question6 btn btn-outline-primary">[][]["f",
+                                    "o",
+                                    "o"]</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="button startBtn">
+            <div class="row button startBtn">
+                <div class="col-12 col-sm-12 button startBtn">
+                    <div class="button text-center startBtn">
+                        <button type="button" class="button btn btn-primary active startBtn" id="startButton">Start Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row viewHighScoreResult">
+                <hr class="viewHighScoreResult">
+                <div class="col-sm-12 viewHighScoreResult">
+                    <p class="viewHighScoreResult">Highest score is : <span class="viewHighScoreResult" id="highestScore" style="font-weight: bold;"></span></p>
+                </div>
+            </div>
+
+        <div class="button viewHighScore">
+                <div class="row button viewHighScore">
+                <div class="col-12 col-sm-12 button viewHighScore">
+                    <div class="button text-center viewHighScore">
+                        <h5 class="button text-center viewHighScore"></h5>
+                        <button type="button" class="button btn btn-secondary active viewHighScore" id="viewHighScoreButton">View Highscores</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row warning">
+                <hr class="warning">
+                <div class="col-sm-12 warning">
+                    <h1 class="warning" id="warn">Your Quiz time limit is Over, please start again!...</h1>
+                </div>
+            </div>
+        
+        <div class="row result">
+                <hr class="result">
+            <div class="col-12 result">
+                <div class="result">
+                    <p class="result">The answer is <span id="rslt"></span>.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row saveToMemory">
+                <hr class="saveToMemory">
+            <div class="col-sm-6 col-md-6 saveToMemory">
+                <div class="form-group row saveToMemory">
+                    <div class="form-group saveToMemory">
+                        <!-- <label class="saveToMemory col-sm-2 col-form-label" for="initials">Enter initials</label> -->
+                        <div class="col-sm-6 saveToMemory">
+                            <input type="text" class="form-control saveToMemory" id="initials"
+                                placeholder="Enter initials..">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-3 col-md-3 saveToMemory text-center">
+                <p class="saveToMemory">Score is : <span class="saveToMemory" id="score" style="font-weight: bold;"></span></p>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 saveToMemory text-center">
+                <button type="button" class="button saveToMemory btn btn-success active" id="saveButton">Save</button>
+            </div>
+
+        </div>
+
+<!-- this is a new comment -->
+
+
+
+    </div>
+
+    <script src="./script.js"></script>
+    <!-- scripts are used in this section in order to make pageload faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
