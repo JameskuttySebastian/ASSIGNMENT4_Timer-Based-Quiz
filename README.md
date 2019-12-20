@@ -4,10 +4,10 @@
 
 
 -  Github
-> https://github.com/JameskuttySebastian/ASSIGNMENT4_Timer-based_quiz
+> https://github.com/JameskuttySebastian/ASSIGNMENT4_Timer-Based-Quiz
 
 -  Github Pages
-> https://jameskuttysebastian.github.io/ASSIGNMENT4_Timer-based_quiz/
+> https://jameskuttysebastian.github.io/ASSIGNMENT4_Timer-Based-Quiz/
 
 
 ###  Features
